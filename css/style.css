@@ -1,0 +1,28 @@
+@keyframes animation-div {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateY(300px);
+    }
+
+}
+
+.div-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+}
+
+.div-move {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: animation-div 5s 1s infinite forwards linear;
+}
